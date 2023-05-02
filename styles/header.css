@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+
+:root 
+{
+    --foreground-color: rgb(245, 245, 245);
+    --background-color: rgba(50, 50, 50);
+
+    --main-color: rgb(0, 0, 255);
+
+    --main-themantic-color: #6765ff;
+    --main-themantic-color-dim: #121099;
+    --secondary-themantic-color: #8ec5fc;
+    --secondary-themantic-color-dim: #387097;
+}
+
+body
+{
+    display: block;
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, var(--background-color), rgba(0, 0, 0, 0.5));
+}
+
+div.header
+{
+    margin: 0 auto;
+}
+
+/*This is for all buttons, no matter what they are for*/
+button 
+{
+    /*transition*/
+    transition-duration: 0.2s;
+
+    /*styling*/
+    font-family: 'IBM Plex Mono';
+    color: var(--foreground-color);
+
+    background-image: linear-gradient(120deg, var(--main-themantic-color-dim), var(--secondary-themantic-color-dim));
+
+    box-shadow: none;
+    text-shadow: none;
+    text-decoration: none;
+
+    /*Margin/Padding*/
+    margin: 0;
+    padding: 5px, 15px, 5px, 15px;
+
+}
+
+button:hover
+{
+    color: var(--secondary-themantic-color)
+}
+
+/*Here we add/change some extra styling for the main "Add Blue Bot" button in the header*/
+button.header_link
+{   
+    /*Border*/
+    border-style: solid;
+    border-radius: 15px;
+    border-color: var(--main-themantic-color);
+
+    /*sizing*/
+    font-size: 20px;
+    height: auto;
+    width: 50%;
+
+    /*Margin/Padding override*/
+    margin: 10px;
+    padding: 5px;
+}
+
+/*this is the "Add Blue Bot" button in the header when the user hovers over it*/
+button.header_link:hover
+{
+    border-width: 5px;
+    font-size: 25px;
+    width: 75%;
+}
+
+/*For our Navigation Bar. A navigation bar is simply a list of links*/
+ul
+{
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

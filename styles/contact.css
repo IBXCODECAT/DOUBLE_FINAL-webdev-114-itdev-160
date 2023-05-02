@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+
+:root 
+{
+    --foreground-color: rgb(245, 245, 245);
+    --background-color: rgba(50, 50, 50);
+
+    --main-color: rgb(0, 0, 255);
+
+    --main-themantic-color: #6765ff;
+    --main-themantic-color-dim: #121099;
+    --secondary-themantic-color: #8ec5fc;
+    --secondary-themantic-color-dim: #387097;
+}
+
+/* type selectors */
+article, aside, figure, footer, header, nav, section {
+    display: block;
+}
+
+body
+{
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /*This is a fallback option if gradients are not supported by the browser*/
+    background-color: var(--background-color);
+    
+    color: var(--foreground-color);
+    font-family: 'Segoe UI', Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    background-image: var(--gradient);
+
+    margin: 0 auto;
+    width: 960px;
+    padding: 10px 20px;
+
+    text-align: center;
+}
+
+section {
+    padding: 0 2em 1em;
+}
+label {
+    position: relative;
+    width: 11em;
+    text-align: center;
+}
+
+input, select, textarea {
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+
+    background-color: darkgray;
+
+    
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    
+
+    padding-left: 15px;
+    padding-right: 25px;
+    
+}
+
+#message input {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
+}
+
+#buttons input {
+	display: inline;
+    width: 7em;
+    margin: auto;
+
+}
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
+legend {
+    color: var(--foreground-color);
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+    text-align: center;
+}
+h2 {
+	color:#009900;
+}
+
+input:required:invalid {
+    background-image: url(../images/required.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+input:focus:invalid {
+    background-image: url(../images/invalid.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+input:required:valid {
+    background-image: url(../images/valid.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+input {
+    transition-duration: 0s;
+    border: 2px solid var(--foreground-color);
+    border-radius: 15px;
+}
+
+input.submit, input.reset {
+    transition-duration: 0.4s;
+    height: 50px;
+    background-color: var(--primary-themantic-color); 
+    color: var(--foreground-color); 
+    border: 2px solid var(--foreground-color);
+    border-radius: 15px;
+}
+  
+input.submit:hover, input.reset:hover {
+    background-color: var(--main-themantic-color);
+    color: white;
+    
+    border: 2px solid white;
+    border-radius: 15px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <!--This is the HTML5 doucment header, place all metadata inside-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Request search engine crawlers to not index this page-->
+        <meta name="robots" content="none">
+        <meta name="googlebot" content="noindex">
+        <meta name="googlebot-news" content="nosnippet">
+
+        <!--Fonts were imported inside of the following stylesheets-->
+        <link rel="stylesheet" href="./../../styles/header.css">
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+
+        <!--Javascript Refs-->
+        <script type="text/javascript" src="./../../scripts/app.js"></script>
+
+        <title>Blue Bot | Header</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <button class="header_link" onclick="AddBlueBot()" value="display">
+                    Click Here to Add Blue Bot
+                </button>
+            </div>
+
+            <div class="header">
+                <nav>
+                    <button onclick="window.open('./../../index.html', 'content')">Home</button>
+                    <button onclick="window.open('./../../pages/introdcution.html', 'content')">Introducing Blue Bot</button>
+                    <button>Feature Documentation</button>
+                    <button>Privacy Policy</button>
+                    <button>Terms of Service</button>
+                    <button>Contact Us</button>
+                </nav>
+            </div>
+        </header>
+    </body>
+</html>
+

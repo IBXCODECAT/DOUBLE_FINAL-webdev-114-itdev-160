@@ -13,22 +13,8 @@
     --secondary-themantic-color-dim: #387097;
 }
 
-/*For embedded content*/
-iframe
-{
-    border: none;
-    overflow: hidden;
-
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    width: 100%;
-}
-
 body
 {
-    height: 100%;
-    margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -38,6 +24,28 @@ body
     color: var(--foreground-color);
     font-family: 'Segoe UI', Tahoma, Verdana, Arial, Helvetica, sans-serif;
     background-image: linear-gradient(120deg, var(--main-themantic-color), var(--secondary-themantic-color));
+}
+
+/*For embedded content*/
+iframe
+{
+    border: none;
+    overflow: hidden;
+
+    height: 100%;
+    width: 100%;
+
+    /*compatability padding*/
+    padding-right: -17px;
+}
+
+iframe#content
+{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
+    height: 100vh;
+    overflow: hidden;
 }
 
 div.nav
@@ -92,7 +100,6 @@ a
 
 p.footer
 {
-    position: relative;
     width: 100%;
     bottom: 10px;
     text-align: center;

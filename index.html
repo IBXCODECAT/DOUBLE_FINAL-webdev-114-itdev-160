@@ -14,8 +14,6 @@
         <link rel="stylesheet" href="./styles/normalize.css">
         <link rel="stylesheet" href="./styles/main.css">
 
-        <!--Javascript (Unused in this project)-->
-        <script src="./scripts/app.js"></script>
 
         <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
 
@@ -25,36 +23,20 @@
     <body>
         <header>
             <!--Render header code here-->
-            <iframe scrolling="no" name="navigation", src="./pages/embeded/header.html"></iframe>
+            <iframe scrolling="no" name="navigation", src="./pages/embeded/header.html" id="nav-head"></iframe>
         </header>
 
         <main>
-            <iframe scrolling="no" name="content" src="./pages/introduction.html"></iframe>
+            <!--Render page code here-->
+            <iframe id="content" name="content" src="./pages/home.html"></iframe>
         </main>
-        <!--
-        <main>
-            <h1 class="heading">Welcome to Blue Bot!</h1>
-            <h2 class="secondary-heading">The world's first privacy focused Discord moderation bot!</h2>
-            <div class="content"> 
-                <p>
-                    Welcome! We're thrilled to introduce you to Blue bot, a new addition to the world of Discord bots.
-                    Blue bot is a versatile and reliable moderation bot designed to help you manage your server more efficiently. 
-                    What sets Blue bot apart from other bots is its commitment to privacy. Unlike many other moderation bots,
-                    Blue bot does not collect message data, which means you can trust it to keep your conversations private and secure.
-                    With Blue bot on your server, you can feel confident that your conversations will remain confidential while still enjoying 
-                    all the benefits of a top-notch moderation bot. We hope you'll add Blue bot to your server today and see for yourself how it 
-                    can transform your Discord experience.
-                </p>
-                <p>
-                    Check out the rest of this site to learn more!
-                </p>
-            </div>
-        </main>-->
 
         <footer>
-            <br>
-            <br>
             <p class="footer">Copyright (C) 2023 Blue Screen Studios Development Group</p>
         </footer>
     </body>
+
+    
+        <!--Javascript (Unused in this project)-->
+        <script src="./scripts/app.js"></script>
 </html>

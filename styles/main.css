@@ -26,6 +26,7 @@ body
     background-image: linear-gradient(120deg, var(--main-themantic-color), var(--secondary-themantic-color));
 }
 
+
 /*For embedded content*/
 iframe
 {

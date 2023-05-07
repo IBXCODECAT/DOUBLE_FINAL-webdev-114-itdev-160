@@ -12,6 +12,11 @@
 	
 <body>
 	<h1>Contact Form</h1>
+	<h3 id="php_invalid">Test</h3>
+
+	<div id="error_container">
+
+	</div>
 	<form action="sendmail.php" method="post" name="contact_form" id="contact_form">
 		<fieldset>
         	<legend>Contact Information</legend>
@@ -47,5 +52,8 @@
 			<input class="reset" type="reset" id="reset" value="Cancel"><br>
 		</fieldset>
 	</form>
+
+	<!--Check if PHP is able to be used on the current host-->
+	<script src="./../scripts/php-check.js"></script>
 </body>
 </html>

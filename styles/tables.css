@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+
+:root {
+    --foreground-color: rgb(245, 245, 245);
+    --background-color: rgba(50, 50, 50);
+
+    --main-color: rgb(21, 21, 39);
+
+    --main-themantic-color: #6765ff;
+    --main-themantic-color-dim: #121099;
+    --secondary-themantic-color: #8ec5fc;
+    --secondary-themantic-color-dim: #387097;
+
+    --half-black: #00000055;
+}
+
+table {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+thead {
+    background-color: var(--main-themantic-color);
+    color: var(--secondary-themantic-color);
+}
+
+th,
+td {
+    color: white;
+    background-color: var(--half-black);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+td.rowspan-primary,
+td.rowspan-secondary {
+    border-top: solid white 1px;
+}
+
+td.rowspan-primary {
+    background-color: var(--background-color);
+}
+
+td.rowspan-secondary {
+    background-color: var(--background-color);
+}
+
+tbody tr.color-override {
+    background-color: #f2f2f2;
+}

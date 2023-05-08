@@ -14,6 +14,7 @@
 
     <!--Fonts were imported inside of the following stylesheet-->
     <link rel="stylesheet" href="./../styles/main.css">
+    <link rel="stylesheet" href="./../styles/tables.css">
 
     <link rel="icon" type="image/x-icon" href="./../assets/favicon.png">
 
@@ -31,53 +32,60 @@
         </div>
         <hr>
         <div class="content">
-            <p>
-                The commands "/config" and "/data" are two slash commands that can be used to configure and
-                manage various features on your Discord server. In this documentation, we'll go over how to use
-                these commands and their available options.
-            </p>
-            <p>
-                The "/config" command allows you to configure different features on your server and set them to specific
-                channels. To use the "/config" command, simply type "/config" followed by the feature you want to
-                configure
-                and the channel you want to set it to. The syntax for the command is as follows:
-            </p>
-            <p>/config &LeftAngleBracket;feature&RightAngleBracket; &LeftAngleBracket;channel&RightAngleBracket;</p>
-            <p>
-                &LeftAngleBracket;feature&RightAngleBracket; can be one of the following options: "AutoMod", "Filter",
-                or "Welcome".
-            </p>
-            <p>
-                &LeftAngleBracket;channel&RightAngleBracket; is any Discord channel you want to set the feature to.
-            </p>
-            <p>
-                For example, to configure AutoMod to the channel #general, you would type: "/config AutoMod #general"
-            </p>
-            <p>
-                The "/config" command supports the following features: AutoMod, Filter, and Welcome. You can choose to
-                set these features to any Discord channel,
-                including text channels and voice channels. Categories can not be utilized by any configuration.
-            </p>
+            <h2>Bot Configuration (/config)</h2>
+            <p>The /config command allows you to configure different features on your server and set them to specific
+                channels. The syntax for the command is as follows:</p>
 
-            <p>
-                The "/data" command allows you to manage your server's data by either getting or deleting it. To use the
-                "/data" command, simply type "/data" followed
-                by the option you want to use. The syntax for the command is as follows:
-            </p>
-            <p>
-                &LeftAngleBracket;option&RightAngleBracket; can be one of the following options: "get" or "delete"
-            </p>
-            <p>
-                For example, to get your server's data, you would execute "/data get".
-                To delete your server's data, you would type execute "/data delete".
-            </p>
-            <p>
-                The slash commands "/config" and "/data" are useful tools for configuring and managing various features
-                on your Discord server. By using these commands,
-                you can ensure that your server is moderated effectively, messages are filtered appropriately, and your
-                server's data is managed properly. If you have any
-                questions or concerns, please reach out to our support team for assistance.
-            </p>
+            <pre>/config ⟨feature⟩ ⟨channel⟩</pre>
+
+            <p>The following features are supported:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Command</th>
+                        <th>Subcommand</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="rowspan-primary" rowspan="4">/config</td>
+                    </tr>
+                    <tr>
+                        <td>AutoMod</td>
+                        <td>configures the AutoMod feature.</td>
+                    </tr>
+                    <tr class="color-override">
+                        <td>Filter</td>
+                        <td>configures the Filter feature.</td>
+                    </tr>
+                    <tr>
+                        <td>Welcome</td>
+                        <td>configures the Welcome feature.</td>
+                    </tr>
+                    <tr>
+                        <td class="rowspan-secondary" rowspan="3">/data</td>
+                    </tr>
+                    <tr class="color-override">
+                        <td>Get</td>
+                        <td>retrieves the data we have collected on your server.</td>
+                    </tr>
+                    <tr>
+                        <td>Delete</td>
+                        <td>deletes all of the data collected on your server.</td>
+                    </tr>
+                    <tr>
+                        <td class="rowspan-primary" rowspan="2">/help</td>
+                    </tr>
+                    <tr class="color-override">
+                        <td></td>
+                        <td>responds with a list of supported commands</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
         </div>
     </main>
 </body>

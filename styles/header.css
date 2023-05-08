@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
 
-:root 
-{
+:root {
     --foreground-color: rgb(245, 245, 245);
     --background-color: rgba(50, 50, 50);
 
@@ -13,8 +12,7 @@
     --secondary-themantic-color-dim: #387097;
 }
 
-body
-{
+body {
     display: block;
     position: relative;
     text-align: center;
@@ -22,14 +20,12 @@ body
     background-image: linear-gradient(to bottom, var(--background-color), rgba(0, 0, 0, 0.5));
 }
 
-div.header
-{
+div.header {
     margin: 0 auto;
 }
 
 /*This is for all buttons, no matter what they are for*/
-button 
-{
+button {
     /*transition*/
     transition-duration: 0.2s;
 
@@ -49,14 +45,12 @@ button
 
 }
 
-button:hover
-{
+button:hover {
     color: var(--secondary-themantic-color)
 }
 
 /*Here we add/change some extra styling for the main "Add Blue Bot" button in the header*/
-button.header_link
-{   
+button.header_link {
     /*Border*/
     border-style: solid;
     border-radius: 15px;
@@ -73,16 +67,14 @@ button.header_link
 }
 
 /*this is the "Add Blue Bot" button in the header when the user hovers over it*/
-button.header_link:hover
-{
+button.header_link:hover {
     border-width: 5px;
     font-size: 25px;
     width: 75%;
 }
 
 /*For our Navigation Bar. A navigation bar is simply a list of links*/
-ul
-{
+ul {
     list-style: none;
     list-style-type: none;
     margin: 0;

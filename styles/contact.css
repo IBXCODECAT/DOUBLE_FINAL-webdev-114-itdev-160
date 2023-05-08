@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
 
-:root 
-{
+:root {
     --foreground-color: rgb(245, 245, 245);
     --background-color: rgba(50, 50, 50);
 
@@ -14,12 +13,17 @@
 }
 
 /* type selectors */
-article, aside, figure, footer, header, nav, section {
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section {
     display: block;
 }
 
-body
-{
+body {
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -27,7 +31,7 @@ body
 
     /*This is a fallback option if gradients are not supported by the browser*/
     background-color: var(--background-color);
-    
+
     color: var(--foreground-color);
     font-family: 'Segoe UI', Tahoma, Verdana, Arial, Helvetica, sans-serif;
     background-image: var(--gradient);
@@ -42,13 +46,16 @@ body
 section {
     padding: 0 2em 1em;
 }
+
 label {
     position: relative;
     width: 11em;
     text-align: center;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     display: flex;
     position: relative;
     align-items: center;
@@ -56,16 +63,16 @@ input, select, textarea {
 
     background-color: darkgray;
 
-    
+
     margin-top: 2px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-    
+
 
     padding-left: 15px;
     padding-right: 25px;
-    
+
 }
 
 #message input {
@@ -75,16 +82,18 @@ input, select, textarea {
 }
 
 #buttons input {
-	display: inline;
+    display: inline;
     width: 7em;
     margin: auto;
 
 }
+
 fieldset {
     margin-top: 1em;
     margin-bottom: 1em;
     padding-top: .5em;
 }
+
 legend {
     color: var(--foreground-color);
     font-weight: bold;
@@ -92,8 +101,9 @@ legend {
     margin-bottom: .5em;
     text-align: center;
 }
+
 h2 {
-	color:#009900;
+    color: #009900;
 }
 
 input:required:invalid {
@@ -120,19 +130,21 @@ input {
     border-radius: 15px;
 }
 
-input.submit, input.reset {
+input.submit,
+input.reset {
     transition-duration: 0.4s;
     height: 50px;
-    background-color: var(--primary-themantic-color); 
-    color: var(--foreground-color); 
+    background-color: var(--primary-themantic-color);
+    color: var(--foreground-color);
     border: 2px solid var(--foreground-color);
     border-radius: 15px;
 }
-  
-input.submit:hover, input.reset:hover {
+
+input.submit:hover,
+input.reset:hover {
     background-color: var(--main-themantic-color);
     color: white;
-    
+
     border: 2px solid white;
     border-radius: 15px;
 }

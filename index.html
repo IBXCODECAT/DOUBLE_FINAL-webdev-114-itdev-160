@@ -14,9 +14,12 @@
     <!--Fonts were imported inside of the following stylesheet-->
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/main.css">
-
+    <link rel="stylesheet" href="./styles/responsive.css">
 
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+
+    <!--Javascript for Add Blue Bot button-->
+    <script src="./scripts/app.js"></script>
 
     <title>Blue Bot | Blue Screen Studios</title>
 </head>
@@ -24,21 +27,17 @@
 <body>
     <header>
         <!--Render header code here-->
-        <iframe scrolling="no" name="navigation" , src="./pages/embeded/header.html" id="nav-head"></iframe>
+        <iframe name="navigation" src="./pages/embeded/header.html" id="nav-head"></iframe>
     </header>
 
     <main>
         <!--Render page code here-->
-        <iframe id="content" name="content" src="./pages/home.html"></iframe>
+        <iframe name="content" src="./pages/home.html" id="content" ></iframe>
     </main>
 
     <footer>
         <p class="footer">Copyright (C) 2023 Blue Screen Studios Development Group</p>
     </footer>
 </body>
-
-
-<!--Javascript (Unused in this project)-->
-<script src="./scripts/app.js"></script>
 
 </html>

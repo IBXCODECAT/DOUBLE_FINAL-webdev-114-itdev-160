@@ -20,8 +20,8 @@ body {
     background-image: linear-gradient(to bottom, var(--background-color), rgba(0, 0, 0, 0.5));
 }
 
-div.header {
-    margin: 0 auto;
+div.header, div.navlinks {
+    margin: 10px auto;
 }
 
 /*This is for all buttons, no matter what they are for*/
@@ -41,7 +41,7 @@ button {
 
     /*Margin/Padding*/
     margin: 0;
-    padding: 5px, 15px, 5px, 15px;
+    padding: 5px;
 
 }
 

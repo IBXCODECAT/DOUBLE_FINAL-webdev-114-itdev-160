@@ -37,6 +37,10 @@ iframe {
     padding-right: -17px;
 }
 
+iframe.nav-head {
+    overflow: hidden;
+}
+
 iframe#content {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -59,7 +63,7 @@ div.nav {
 
 h1.heading {
     color: var(--compony-color);
-    font-family: 'IBM Plex Mono', 'Segoe UI', Tahoma, Verdana, Arial, Helvetica, sans-serif sans-serif;
+    font-family: "IBM Plex Mono", "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 45px;
 
@@ -71,7 +75,7 @@ h1.heading {
 
 h2.secondary-heading {
     color: var(--foreground-color);
-    font-family: 'IBM Plex Mono', 'Segoe UI', Tahoma, Verdana, Arial, Helvetica, sans-serif sans-serif;
+    font-family: "IBM Plex Mono", "Segoe UI", Tahoma, Verdana, Arial, Helvetica, sans-serif;
     text-align: center;
 
     font-size: 15px;
@@ -79,7 +83,7 @@ h2.secondary-heading {
 
 div.content {
     color: var(--foreground-color);
-    font-family: 'Segoe UI', Tahoma, Verdana, Arial, Helvetica, sans-serif sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, Arial, Helvetica, sans-serif;
     text-align: left;
     margin-left: 25%;
     margin-right: 25%;
